@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "example-fastapi-1"
+version = "0.0.0"
+description = "An example FastAPI application with OpenTelemetry instrumentation."
+authors = [
+    "Mohanad Abugharbia <mabugharbia@abugharbia.com>",
+]
+maintainers = [
+    "Mohanad Abugharbia <mabugharbia@abugharbia.com>",
+]
+readme = "README.md"
+
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.115.5"
+uvicorn = "^0.32.1"
+pydantic = "^2.10.2"
+httpx = "^0.28.1"
+opentelemetry-api = "^1.27.0"
+opentelemetry-distro = {extras = ["otlp"], version = "^0.48b0"}
+opentelemetry-instrumentation = "^0.48b0"
+opentelemetry-instrumentation-fastapi = "^0.48b0"
+opentelemetry-instrumentation-httpx = "^0.48b0"
+pydantic-settings = "^2.9.1"
